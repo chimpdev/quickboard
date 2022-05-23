@@ -1,0 +1,12 @@
+{
+  "name": "quickboard",
+  "version": "1.0.0",
+  "description": "This package is a simple and easy to create leaderboard. If you're using Discord.js, you can use this package to create a leaderboard like Top 10 of the server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "can#0002",
+  "license": "MIT",
+  "homepage": "https://github.com/chimpdev/quickboard#readme"
+}
