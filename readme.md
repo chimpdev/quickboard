@@ -20,7 +20,8 @@ const QuickBoard = require('quickboard');
 const board = new QuickBoard({
   max: 10,
   data: client.guilds.cache.get('123456789012345678').members.cache.map(member => ({ value: database.fetch(`message-count.${member.user.id}`), member })), // client = discord.js client, database = quick.db
-  map: (item, index) => `${index + 1}. ${item.member.displayName} - ${item.value} messages`;
+  map: (item, index) => `${index + 1}. ${item.member.displayName} - ${item.value} messages`,
+  sort: (according, current) => current.value - according.value,
 }).create();
 
 console.log(board);
