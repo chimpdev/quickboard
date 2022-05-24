@@ -16,13 +16,10 @@ npm install quickboard@latest
 
 # Simple Instance
 ```js
-const client = // discord.js client
-const database = // database
-
 const QuickBoard = require('quickboard');
 const board = new QuickBoard({
   max: 10,
-  data: client.guilds.cache.get('123456789012345678').members.cache.map(member => ({ value: database.get(`message-count.${member.user.id}`), member })),
+  data: client.guilds.cache.get('123456789012345678').members.cache.map(member => ({ value: database.fetch(`message-count.${member.user.id}`), member })), // client = discord.js client, database = quick.db
   map: (item, index) => `${index + 1}. ${item.member.displayName} - ${item.value} messages`;
 }).create();
 
@@ -41,7 +38,6 @@ console.log(board);
 9. Discord#0000 234 messages
 10. Discord#0000 - 100 messages
 ```
-
 
 # News
 - Published.
