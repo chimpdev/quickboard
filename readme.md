@@ -1,4 +1,4 @@
-## Hi! Welcome to Home Page. 👋
+## Hi! Welcome to Quickboard. 👋
 <div align="left">
   <p>
     <a href="https://www.npmjs.com/package/quickboard"><img src="https://img.shields.io/npm/v/quickboard.svg?maxAge=3600" alt="npm version" /></a>
@@ -37,11 +37,13 @@ console.log(board);
 7. Discord#0000 566 messages
 8. Discord#0000 500 messages
 9. Discord#0000 234 messages
-10. Discord#0000 - 100 messages
+10. Discord#0000 100 messages
 ```
 
 # News
 - Published.
+- Added types (v1.4.0)
+- Added some nice touaches (v1.4.5)
 
 # Contact
 [![Discord Badge](https://img.shields.io/badge/can-white?style=social&logo=Discord)](https://discord.com/users/613700645173592086)<br>[![Discord Badge](https://img.shields.io/badge/thiskyhan-white?style=social&logo=Instagram)](https://instagram.com/thiskyhan)
