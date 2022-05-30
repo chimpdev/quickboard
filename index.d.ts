@@ -21,7 +21,6 @@ declare class QuickBoard {
      * Returns learboard string
      * 
      * **Example Output:**
-<<<<<<< HEAD
      * ```
      * "1. Jane#0000 - 12345 Messages\n2. John#0000 - 567 Messages"
      * ```
