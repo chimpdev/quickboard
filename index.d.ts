@@ -3,6 +3,7 @@
    * @param {number} options.max How many items to return in leaderboard
    * @param {Array} options.data Data the leaderboard is based on
    * @param {function} options.map How you want the leaderboard items to display
+   * @param {function} options.sort How you want the leaderboard items to be sorted
    * @param {boolean} options.reverse true or false
    * 
 */
