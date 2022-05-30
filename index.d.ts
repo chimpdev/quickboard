@@ -1,10 +1,10 @@
 /**
-   * @class QuickBoard
    * @author foup#0001 
    * @param {number} options.max How many items to return in leaderboard
    * @param {Array} options.data Data the leaderboard is based on
    * @param {function} options.map How you want the leaderboard items to display
-   * @param {boolean} options.reverse true or false
+   * @param {function} options.sort How you want to sort the leaderboard's items
+   * @param {boolean} options.reverse true or false (optional)
    * 
 */
 declare class QuickBoard {
@@ -21,35 +21,31 @@ declare class QuickBoard {
      * Returns learboard string
      * 
      * **Example Output:**
-     * ```ssh-session
-     * 1. Discord#0000 23245 messages
-     * 2. Discord#0000 7754 messages
-     * 3. Discord#0000 3576 messages
-     * 4. Discord#0000 2256 messages
-     * 5. Discord#0000 1123 messages
+     * ```
+     * "1. Jane#0000 - 12345 Messages\n2. John#0000 - 567 Messages"
      * ```
      */
-    create(): string;
+    public create(): string;
 
     /**
      * @private
      * Initializes the the leaderboard creation
      */
-    init(): string;
+    private init(): string;
 
     /**
      * @private
      * Formats data created on new QuickBoard()
      * @returns string
      */
-    template(): string;
+    private template(): string;
 
     /**
      * @private
      * @param {string} key Index to search for in class 'QuickBoard'
      * @returns {any} this[key]
      */
-    get(key: string): any;
+    private get(key: string): any;
 
     /**
      * @private
@@ -57,7 +53,7 @@ declare class QuickBoard {
      * @param {string | Array | number | boolean | ((...args: any[]) => void)} value New value for said 'index'
      * @returns {any} New value
      */
-    set(key: string, value: string | Array<any> | number | boolean | ((...args: any[]) => void)): any;
+    private set(key: string, value: string | Array<any> | number | boolean | ((...args: any[]) => void)): any;
 }
 
-export default QuickBoard;
+export = QuickBoard;
