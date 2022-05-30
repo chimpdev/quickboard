@@ -1,10 +1,10 @@
 {
   "name": "quickboard",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "keywords": ["quickboard", "leaderboard", "top10", "discord.js", "discord", "bot"],
   "description": "This package is a simple and easy to create leaderboard. If you're using Discord.js, you can use this package to create a leaderboard like Top 10 of the server.",
   "main": "index.js",
-  "types": "./index.d.ts",
+  "types": "index.d.ts",
   "scripts": {
     "start": "node index.js"
   },
