@@ -3,8 +3,7 @@
    * @param {number} options.max How many items to return in leaderboard
    * @param {Array} options.data Data the leaderboard is based on
    * @param {function} options.map How you want the leaderboard items to display
-   * @param {function} options.sort How you want to sort the leaderboard's items
-   * @param {boolean} options.reverse true or false (optional)
+   * @param {boolean} options.reverse true or false
    * 
 */
 declare class QuickBoard {
@@ -21,12 +20,12 @@ declare class QuickBoard {
      * Returns learboard string
      * 
      * **Example Output:**
+<<<<<<< HEAD
      * ```
      * "1. Jane#0000 - 12345 Messages\n2. John#0000 - 567 Messages"
      * ```
      */
     public create(): string;
-
     /**
      * @private
      * Initializes the the leaderboard creation
